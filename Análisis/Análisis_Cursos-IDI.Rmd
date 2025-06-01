@@ -1,5 +1,70 @@
 ---
 title: "Análisis_Cursos-IDI"
-output: html_document
+author: "Alexander Bonilla & Andres Rodríguez"
+output: 
+  html_document:
+    theme: cosmo
+    toc: true
+    toc_depth: 2
+    number_sections: true
 ---
+
+## Ingeniería en Diseño Industrial con Énfasis en Comunicación Visual
+<hr>
+La Ingeniería en Diseño Industrial con Énfasis en Comunicación Visual se encarga de diseñar la traducción de información científica, económica o cultural, en diseño de interfaces para aparatos electrónicos y diseño de información para multimedia, web o sistemas educativos.
+
+Además, se enfatiza en aspectos de significado, programación multimedia, manejo de software especializado y teorías de interfaces.
+<hr>
+
+### Características 
+<hr>
+**Título universitario:** Ingeniero (a) en Diseño Industrial con énfasis en Comunicación Visual  
+**Grado académico:** Licenciatura  
+**Sede:** Campus Tecnológico Central Cartago  
+**Escuela(s) a la que pertenece:** Escuela de Diseño Industrial  
+<hr>
+
+### Perfil Profesional
+<hr>
+
+Persona creativa, orientada a la solución de problemas de diversa índole, proactiva y siempre interesada en el bienestar de las demás.
+
+El diseñador industrial puede trabajar dentro de diferentes tipos de empresas y cumplir diversas tareas tales como las siguientes:
+
+- Diseñar proyectos o planes estratégicos.  
+- Diseñar servicios o sistemas de productos y servicios (PPS).  
+- Brindar servicios de asesoría en diseño.  
+- Diseñar un producto o línea de productos destinados a la comercialización.  
+
+Para nuestro interés está el siguiente campo de acción empresarial en el que se inscriben las actividades de diseño:
+
+**Énfasis en Comunicación Visual:**
+
+#### Diseño de identidad corporativa
+
+Es el encargado de definir los rasgos de identidad de las empresas y transformarlos en mensajes legibles para todo público.  
+En este campo, los diseñadores forman parte de equipos interdisciplinarios en los cuales pueden integrarse profesionales tan diversos como expertos en marketing, ingenieros industriales, semiólogos, asesores en relaciones públicas, arquitectos y expertos en publicidad.
+
+#### Comunicación visual e infográfica
+
+El diseñador en comunicación visual e infográfica es el encargado de traducir a medios gráficos toda la información de relevancia en la sociedad moderna. Esta información va desde sistemas de señalización o la traducción de conceptos relevantes a medios más accesibles para todos los miembros de la sociedad, hasta el aprovechamiento óptimo de los medios modernos en la educación y la ciencia.
+
+Esta rama del diseño ha adquirido especial importancia, pues muchos problemas de nuestra sociedad se deben principalmente al mal entendimiento que tiene la población en general sobre infinidad de aspectos, desde el uso de señales de tránsito hasta el concepto de deuda interna de un país.
+
+<hr>
+
+### Facilidades
+<hr>
+
+- Apropiada infraestructura.  
+- Personal docente con más de 25 años de experiencia.  
+- Laboratorio de cómputo especializado en manejo bidimensional y tridimensional.  
+- Equipo para escaneo tridimensional e impresión tridimensional.  
+- Laboratorio de ergonomía.  
+- Equipo para desarrollo de modelos a escala.  
+- Equipo *Eye Tracking* para investigación en usabilidad.  
+- Material para modelos a escala para el desarrollo de robótica.  
+- Cuatro laboratorios para desarrollo de nuevos productos.  
+
+
 
