@@ -11,7 +11,7 @@ names(area_colores) <- levels(nodes$área)
 
 nodes$color <- area_colores[nodes$área]
 
-nodes$value <- nodes$créditos * 3
+nodes$value <- log(nodes$créditos + 1) * 5  
 
 nodes$shape <- ifelse(nodes$bloque == "0", "dot",
                 ifelse(nodes$bloque == "1", "dot",
@@ -35,4 +35,4 @@ visNetwork(nodes, edges) %>%
     solver = "forceAtlas2Based",
     forceAtlas2Based = list(gravitationalConstant = -100)
   ) %>%
-  visInteraction(navigationButtons = TRUE)
+  visInteraction(navigationButtons = TRUE) 
