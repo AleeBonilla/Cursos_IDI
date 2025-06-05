@@ -1,0 +1,62 @@
+id;label;área;bloque;créditos;horas
+CI0200;EXAMEN DIAGNÓSTICO;Comunicación e idiomas;0;0;0
+CI0202;INGLÉS BÁSICO;Comunicación e idiomas;0;2;3
+CI1106;COMUNICACIÓN ESCRITA;Comunicación e idiomas;1;2;6
+CS1502;INTRODUCCIÓN A LA TÉCNICA CIENCIA Y TECNOLOGÍA;Historia humanidades y contexto del diseño;1;1;2
+ID1101;ANÁLISIS DE PRODUCTO I;Diseño industrial y de producto;1;2;2
+ID1103;MÉTODOS DE DESARROLLO DE PRODUCTOS;Teoría del diseño y metodología;1;2;2
+ID1118;FUNDAMENTOS DEL DISEÑO;Diseño industrial y de producto;1;3;9
+ID1205;TALLER DE DIBUJO;Dibujo representación y espacio;1;3;9
+MA0101;MATEMÁTICA GENERAL;Ciencias básicas;1;2;5
+CI1107;COMUNICACIÓN ORAL;Comunicación e idiomas;2;1;3
+FI1101;FÍSICA GENERAL I;Ciencias básicas;2;3;4
+FI1201;LABORATORIO FÍSICA GENERAL I;Ciencias básicas;2;1;2
+ID1104;ANÁLISIS DE PRODUCTO II;Diseño industrial y de producto;2;2;2
+ID1119;PRINCIPIOS DEL DISEÑO;Diseño industrial y de producto;2;2;6
+ID1206;MODELADO Y SIMULACIÓN;Tecnología y herramientas digitales;2;3;9
+MA1102;CÁLCULO DIFERENCIAL E INTEGRAL;Ciencias básicas;2;4;5
+FI2103;FÍSICA GENERAL III;Ciencias básicas;3;3;4
+ID2120;COMUNICACIÓN VISUAL;Diseño gráfico y comunicación visual;3;3;9
+ID2207;ANÁLISIS DEL ESPACIO TRIDIMENSIONAL;Dibujo representación y espacio;3;3;9
+ID2301;PRINCIPIOS ESTRUCTURALES;Materiales estructuras y manufactura;3;2;4
+ID2401;ERGONOMÍA;Ergonomía y factores humanos;3;2;3
+QU1902;FUNDAMENTOS DE QUÍMICA;Ciencias básicas;3;4;5
+CA2125;ELEMENTOS DE COMPUTACIÓN;Tecnología y herramientas digitales;4;3;4
+ID2107;DISEÑO I;Diseño industrial y de producto;4;4;3
+ID2108;DISEÑO II;Diseño industrial y de producto;4;4;3
+ID2302;PROCESOS DE MANUFACTURA I;Materiales estructuras y manufactura;4;2;3
+MA2117;CÁLCULO Y GEOMETRÍA ANALÍTICA;Ciencias básicas;4;4;4
+SE1100;ACTIVIDAD CULTURAL I;Deportivas y culturales;4;0;2
+CI1230;INGLÉS I;Comunicación e idiomas;5;2;6
+ID2204;HERRAMIENTAS DIGITALES PARA DISEÑO;Tecnología y herramientas digitales;5;2;3
+ID3109;DISEÑO III;Diseño industrial y de producto;5;4;3
+ID3110;DISEÑO IV;Diseño industrial y de producto;5;4;3
+ID3303;PROCESOS DE MANUFACTURA II;Materiales estructuras y manufactura;5;2;3
+PI2608;ANÁLISIS ESTADÍSTICO;Ciencias básicas;5;3;4
+SE1200;ACTIVIDAD DEPORTIVA I;Deportivas y culturales;5;0;2
+CI1231;INGLÉS II;Comunicación e idiomas;6;2;3
+ID3111;DISEÑO V;Diseño industrial y de producto;6;4;3
+ID3112;DISEÑO VI;Diseño industrial y de producto;6;4;3
+ID3113;BIÓNICA Y ECO-DISEÑO;Ergonomía y factores humanos;6;3;3
+ID3205;CULTURA MATERIAL;Teoría del diseño y metodología;6;3;3
+ID3304;PROCESOS DE MANUFACTURA III;Materiales estructuras y manufactura;6;2;3
+SE1400;ACTIVIDAD CULTURAL-DEPORTIVA;Deportivas y culturales;6;0;2
+AE3414;FUNDAMENTOS DE MERCADEO;Gestión economía y emprendimiento;7;3;9
+AE5121;INGENIERÍA ECONÓMICA;Gestión economía y emprendimiento;7;3;3
+CS3401;SEMINARIO DE ESTUDIOS FILOSÓFICOS HISTÓRICOS;Historia humanidades y contexto del diseño;7;2;3
+FH1000;CENTROS DE FORMACIÓN HUMANÍSTICA;Historia humanidades y contexto del diseño;7;0;2
+ID4501;DISEÑO DE PRODUCTOS VII;Diseño industrial y de producto;7;5;4
+ID4601;DISEÑO DE COMUNICACIÓN VISUAL VII;Diseño gráfico y comunicación visual;7;5;4
+CS4402;SEMINARIO DE ESTUDIOS COSTARRICENSES;Historia humanidades y contexto del diseño;8;2;3
+ID4503;DISEÑO VIII (PROYECTO DE GRADUACIÓN);Diseño industrial y de producto;8;10;30
+CE5507;MODELACIÓN HARDWARE/SOFTWARE CON ORIENTACIÓN A OBJETOS;Tecnología y herramientas digitales;9;3;9
+ID5513;CURSO ELECTIVO I;Electivas;9;3;4
+ID5604;MANUFACTURA DE EMPAQUE / EMBALAJE;Materiales estructuras y manufactura;9;3;4
+ID5605;DISEÑO IX (COMUNICACIÓN VISUAL);Diseño gráfico y comunicación visual;9;5;4
+ID5606;SEMINARIO DE INVESTIGACIÓN (COMUNICACIÓN VISUAL);Investigación y proyecto final;9;3;4
+ID5114;GESTIÓN DE PROYECTOS;Gestión economía y emprendimiento;10;2;2
+ID5115;INNOVACIÓN DE PRODUCTOS;Gestión economía y emprendimiento;10;2;2
+ID5514;CURSO ELECTIVO II;Electivas;10;3;4
+ID5516;TEORÍA DE LAS INTERFASES Y LA INTERACTIVIDAD;Diseño gráfico y comunicación visual;10;2;2
+ID5602;TEORÍA DEL DISEÑO DE LA INFORMACIÓN;Diseño gráfico y comunicación visual;10;2;4
+ID5611;TRABAJO FINAL DE GRADUACIÓN (COMUNICACIÓN VISUAL);Investigación y proyecto final;10;7;30

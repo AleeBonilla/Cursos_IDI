@@ -11,19 +11,21 @@ output:
 
 ## Ingeniería en Diseño Industrial con Énfasis en Comunicación Visual
 <hr>
+
 La Ingeniería en Diseño Industrial con Énfasis en Comunicación Visual se encarga de diseñar la traducción de información científica, económica o cultural, en diseño de interfaces para aparatos electrónicos y diseño de información para multimedia, web o sistemas educativos.
 
 Además, se enfatiza en aspectos de significado, programación multimedia, manejo de software especializado y teorías de interfaces.
-<hr>
 
+<hr>
 ### Características 
 <hr>
+
 **Título universitario:** Ingeniero (a) en Diseño Industrial con énfasis en Comunicación Visual  
 **Grado académico:** Licenciatura  
 **Sede:** Campus Tecnológico Central Cartago  
 **Escuela(s) a la que pertenece:** Escuela de Diseño Industrial  
-<hr>
 
+<hr>
 ### Perfil Profesional
 <hr>
 
@@ -35,10 +37,6 @@ El diseñador industrial puede trabajar dentro de diferentes tipos de empresas y
 - Diseñar servicios o sistemas de productos y servicios (PPS).  
 - Brindar servicios de asesoría en diseño.  
 - Diseñar un producto o línea de productos destinados a la comercialización.  
-
-Para nuestro interés está el siguiente campo de acción empresarial en el que se inscriben las actividades de diseño:
-
-**Énfasis en Comunicación Visual:**
 
 #### Diseño de identidad corporativa
 
@@ -52,7 +50,6 @@ El diseñador en comunicación visual e infográfica es el encargado de traducir
 Esta rama del diseño ha adquirido especial importancia, pues muchos problemas de nuestra sociedad se deben principalmente al mal entendimiento que tiene la población en general sobre infinidad de aspectos, desde el uso de señales de tránsito hasta el concepto de deuda interna de un país.
 
 <hr>
-
 ### Facilidades
 <hr>
 
@@ -66,5 +63,125 @@ Esta rama del diseño ha adquirido especial importancia, pues muchos problemas d
 - Material para modelos a escala para el desarrollo de robótica.  
 - Cuatro laboratorios para desarrollo de nuevos productos.  
 
+## Grafo de cursos
 
+<hr>
+### Descripción del grafo interactivo
+<hr>
+
+
+El siguiente grafo representa visualmente los cursos que conforman la carrera universitaria, donde cada nodo corresponde a un curso individual. Las conexiones entre nodos indican relaciones académicas:
+
+- **Líneas continuas**: representan *requisitos*, es decir, cursos que deben completarse antes de cursar otros.
+- **Líneas discontinuas**: indican *correquisitos*, es decir, cursos que deben llevarse de forma simultánea o pueden cursarse en el mismo periodo.
+
+La visualización es completamente **interactiva**. El usuario puede:
+
+- **Explorar** cursos individualmente pasando el cursor sobre los nodos para ver información detallada como créditos, horas semanales y bloque académico.
+- **Ubicar fácilmente** cursos específicos mediante un buscador por nombre.
+- **Filtrar o resaltar** grupos de cursos según su **área de estudio**, lo que facilita el análisis temático o curricular.
+- **Navegar el grafo** utilizando botones de zoom y desplazamiento (*pan*), permitiendo explorar libremente la estructura curricular.
+
+La **forma**, el **color** y el **tamaño** de cada nodo codifican distintas dimensiones del curso (como bloque, carga horaria o cantidad de créditos), haciendo más intuitiva la interpretación visual de la malla curricular. Cabe mencionar que del bloque 0 al 3, la forma es siempre un punto (dot) ya que se consideran bloques introductorios a la carrera.
+
+**Nota:** Para mejorar la comprensión de la visualización, al lado derecho del grafo se muestra una serie de leyendas que permiten identificar las características de cada nodo, además, pasando el cursor sobre un nodo especifico también le permite ver sus atributos exactos.
+
+<hr>
+
+```{r grafo_cursos, echo=FALSE, warning=FALSE}
+
+library(visNetwork)
+
+# Cargar datos
+nodes <- read.csv("nodes.csv", fileEncoding = "latin1", sep = ";", header = TRUE)
+edges <- read.csv("edges.csv", sep = ";", header = TRUE)
+
+# Convertir a factores
+nodes$área <- as.factor(nodes$área)
+nodes$bloque <- as.factor(nodes$bloque)
+
+# Colores por área
+area_colores <- rainbow(length(levels(nodes$área)))
+names(area_colores) <- levels(nodes$área)
+nodes$color <- area_colores[nodes$área]
+
+# Tamaños manuales por créditos
+nodes$value <- ifelse(nodes$créditos == 0, 10,
+               ifelse(nodes$créditos == 1, 20,
+               ifelse(nodes$créditos == 2, 30,
+               ifelse(nodes$créditos == 3, 45,
+               ifelse(nodes$créditos == 4, 60,
+               ifelse(nodes$créditos == 5, 80,
+               ifelse(nodes$créditos == 7, 110,
+               ifelse(nodes$créditos == 10, 150, 10))))))))
+
+# Formas por bloque
+nodes$shape <- ifelse(nodes$bloque == "0", "dot",
+                ifelse(nodes$bloque == "1", "dot",
+                ifelse(nodes$bloque == "2", "dot",
+                ifelse(nodes$bloque == "3", "dot",
+                ifelse(nodes$bloque == "4", "square",
+                ifelse(nodes$bloque == "5", "triangle",
+                ifelse(nodes$bloque == "6", "box",
+                ifelse(nodes$bloque == "7", "triangleDown",
+                ifelse(nodes$bloque == "8", "hexagon",
+                ifelse(nodes$bloque == "9", "diamond",
+                ifelse(nodes$bloque == "10", "ellipse", "dot")))))))))))
+
+# Tooltips
+nodes$title <- paste(
+  "ID: ", nodes$id, "<br>",
+  "Créditos: ", nodes$créditos, "<br>",
+  "Horas: ", nodes$horas, "<br>",
+  "Bloque: ", nodes$bloque
+)
+
+# Crear leyenda combinada
+leyenda_areas <- data.frame(
+  label = levels(nodes$área),
+  shape = "dot",
+  color = area_colores,
+  size = 20,
+  title = "Área"
+)
+
+leyenda_formas <- data.frame(
+  label = c("Bloque 4", "Bloque 5", "Bloque 6", "Bloque 7", "Bloque 8", "Bloque 9", "Bloque 10"),
+  shape = c("square", "triangle", "box", "triangleDown", "hexagon", "diamond", "ellipse"),
+  color = "gray",
+  size = 20,
+  title = "Bloque"
+)
+
+leyenda_creditos <- data.frame(
+  label = c("0 créditos", "1", "2", "3", "4", "5", "7", "10"),
+  shape = "dot",
+  color = "black",
+  size = c(10, 12, 14, 16, 18, 20, 22, 24),
+  title = "Créditos"
+)
+
+# Visualización
+visNetwork(nodes, edges) %>%
+  visOptions(
+    highlightNearest = TRUE,
+    nodesIdSelection = TRUE,
+    selectedBy = list(variable = "área", multiple = TRUE)
+  ) %>%
+  visPhysics(
+    solver = "forceAtlas2Based",
+    forceAtlas2Based = list(gravitationalConstant = -100)
+  ) %>%
+  visInteraction(
+    navigationButtons = TRUE,
+    hover = TRUE
+  ) %>%
+  visLegend(
+    useGroups = FALSE,
+    addNodes = rbind(leyenda_areas, leyenda_formas, leyenda_creditos),
+    width = 0.3,
+    position = "right"
+  )
+
+```
 
